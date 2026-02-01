@@ -1,34 +1,67 @@
-# India Inflation Deep-Dive: Decoding the 2019 Supply Shock & COVID-19 Impact (2013-2023)
-Quantitative analysis of India's CPI (2013-2023). Decodes the 2019 supply-side shock, quantifies COVID-19 sector volatility, and models the 0.97 correlation between global crude oil and domestic inflation.
+# India Inflation Deep-Dive (2013–2023)
 
-## 🚀 Executive Summary
-This project analyzes 10 years of India's Consumer Price Index (CPI) data to isolate the root causes of inflation volatility. Moving beyond basic trend analysis, this study separates **supply-side shocks** from **demand-side pressure**.
+**Quantitative analysis of India’s CPI to identify supply-side shocks, COVID-era distortions, and exposure to global crude oil prices.**
 
-**Key Quantitative Findings:**
-* **The 2019 Anomaly:** Identified that the 2019 inflation spike was **not demand-driven** but a **supply-side shock** caused by a **60% YoY surge in vegetable prices**, while core inflation remained relatively stable.
-* **Global Sensitivity:** Calculated a **Pearson Correlation Coefficient of 0.97** between global crude oil events and domestic fuel prices, quantifying India's high sensitivity to imported energy inflation.
-* **Pandemic Decoupling:** Analysis of the COVID-19 period (2020-2021) reveals a "K-shaped" divergence where Transport and Health sectors saw inflation rise despite a general economic slowdown.
+**Key signals uncovered:**
+- 2019 inflation spike driven by **supply-side food shock**, not demand.
+- **0.97 correlation** between global crude oil prices and domestic fuel inflation.
+- COVID period shows **sectoral decoupling** in essential services.
 
-## 📊 Visual Analysis
+---
 
-### 1. The 2019 Supply-Side Shock
-*Figure 1: YoY Inflation Trend Analysis (2016-2023). Note the sharp 2019 spike driven by the vegetable supply chain disruption, distinct from the 2020-21 pandemic trends.*
-![YoY Inflation Trend](images/WhatsApp Image 2026-01-10 at 7.45.44 PM.jpeg)
+## 📊 Key Questions & Analytical Insights
 
-### 2. Sectoral Volatility & COVID-19
-*Figure 2: Sector-wise breakdown showing the decoupling of essential goods (Food/Health) from discretionary categories during lockdown phases.*
-![Sector Breakdown](images/WhatsApp Image 2026-01-10 at 7.45.45 PM.jpeg)
+### Q1: What is the current composition of the CPI basket?
+**Answer:**
+Food & Beverages dominate India’s CPI basket, making food inflation the primary driver of headline CPI movements. This heavy weighting means agricultural output has a disproportionate impact on India's economic stability compared to other sectors.
 
-### 3. Recent Inflation Composition (2023)
-*Figure 3: Current weightage of broader categories, highlighting the dominance of Food & Beverages in the Indian consumption basket.*
-![Recent Composition](images/WhatsApp Image 2026-01-10 at 7.45.45 PM (1).jpeg)
+![CPI Basket Contribution](screenshots/Screenshot%202026-02-02%20042059.png)
 
-*(Note: Full high-resolution charts available in the `images/` directory)*
+---
 
-## 🛠️ Technical Approach & Methodology
-* **Data Processing:** Cleaned and normalized monthly CPI datasets (Rural, Urban, Combined) from 2013-2023, handling missing values in early rural datasets to ensure time-series continuity.
-* **Statistical Modeling:** Applied Year-on-Year (YoY) growth calculations to smooth out seasonal volatility and identify true inflationary trends.
-* **Correlation Analysis:** Performed statistical correlation tests to validate the relationship between external global markers (Crude Oil) and internal CPI components.
+### Q2: What are the historical inflation trends and anomalies (2017 onwards)?
+**Answer:**
+The highest YoY inflation spike in the last decade (2019) was linked to **structural and supply-driven factors**, not sustained demand pressure. The data reveals a sharp divergence where headline inflation spiked while core inflation remained relatively stable.
 
-## 💡 Strategic Implication
-This analysis suggests that **monetary policy (interest rate hikes)** may be less effective against inflation spikes similar to 2019, as these were driven by **logistics and crop cycles (Supply Side)** rather than excess consumer liquidity (Demand Side). Policy interventions focusing on supply-chain resilience would yield better stability than purely monetary tightening for such anomalies.
+![YoY Inflation Trend](screenshots/Screenshot%202026-02-02%20042119.png)
+
+---
+
+### Q3: How has Food Inflation behaved in the last 12 months?
+**Answer:**
+Food inflation shows sharp month-on-month volatility, with a **single sub-category acting as the dominant contributor** during peak months. This confirms that short-term inflation in India is often "item-specific" (e.g., tomatoes or cereals) rather than broad-based.
+
+![Food Inflation Analysis](screenshots/Screenshot%202026-02-02%20042131.png)
+
+---
+
+### Q4: What was the impact of COVID-19 on sector-specific inflation?
+**Answer:**
+During COVID-19 (post-March 2020), essential sectors such as **Healthcare and Transport** experienced inflation despite weak aggregate demand. This indicates **supply disruption–led inflation**, where logistical bottlenecks forced prices up even as the economy slowed down.
+
+![COVID Inflation Impact](screenshots/Screenshot%202026-02-02%20042145.png)
+
+---
+
+### Q5: How do Global Crude Oil prices impact domestic inflation?
+**Answer:**
+A strong statistical relationship (**0.97 correlation**) exists between global crude oil price movements and domestic inflation. This highlights India’s high exposure to **imported energy shocks**, making domestic prices highly sensitive to geopolitical events affecting oil supply.
+
+![Crude Oil Correlation](screenshots/Screenshot%202026-02-02%20042157.png)
+
+---
+
+## 🛠️ Analytical Approach (Brief)
+- **Index-Based Analysis:** CPI treated strictly as an index to measure relative change, not additive prices.
+- **Seasonality Adjustment:** YoY normalization used to remove seasonal noise from the data.
+- **Sector Aggregation:** Grouped sub-sectors (e.g., "Pulses", "Vegetables") into broader categories for structural interpretation.
+- **Correlation Testing:** Pearson correlation analysis used to validate global linkages with crude oil markets.
+
+---
+
+## 💡 Policy-Level Takeaway
+Inflation episodes like **2019** are largely **supply-driven**, implying that **monetary tightening (raising interest rates)** is often insufficient to control them. Targeted interventions in **agriculture supply chains, logistics, and reducing energy dependency** would be more effective in stabilizing inflation than purely monetary policy.
+
+---
+
+📌 *This project focuses on insight generation over visualization-heavy reporting.*
