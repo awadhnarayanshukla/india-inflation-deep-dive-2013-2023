@@ -1,4 +1,5 @@
-# India Inflation Dynamics & Supply-Side Analysis  (2013–2023)
+# India Inflation Dynamics & Supply-Side Analysis  
+(2013–2023)
 
 **Quantitative analysis of India’s CPI to identify supply-side shocks, COVID-era distortions, and exposure to global crude oil prices.**
 
